@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChainCred Africa - Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); }
+    .doc-section { scroll-margin-top: 100px; }
+    pre { background: #f8fafc; border: 1px solid #e2e8f0; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="gradient-bg text-white shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full">
+          <span class="text-xl font-bold">ChainCred Africa</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="hover:text-blue-200">Home</a>
+          <a href="about.html" class="font-semibold text-blue-200">About</a>
+          <a href="team.html" class="hover:text-blue-200">Team</a>
+          <a href="features.html" class="hover:text-blue-200">Solutions</a>
+          <a href="contact.html" class="hover:text-blue-200">Contact</a>
+        </div>
+        <button class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="flex flex-col md:flex-row">
+    <!-- Sidebar -->
+    <aside class="w-full md:w-64 bg-white shadow-md p-6">
+      <h2 class="text-lg font-bold mb-4">Documentation</h2>
+      <ul class="space-y-2">
+        <li><a href="#getting-started" class="text-blue-600 hover:underline">Getting Started</a></li>
+        <li><a href="#architecture" class="text-gray-700 hover:underline">System Architecture</a></li>
+        <li><a href="#smart-contracts" class="text-gray-700 hover:underline">Smart Contracts</a></li>
+        <li><a href="#api" class="text-gray-700 hover:underline">API Reference</a></li>
+        <li><a href="#troubleshooting" class="text-gray-700 hover:underline">Troubleshooting</a></li>
+      </ul>
+    </aside>
+
+    <!-- Content -->
+    <main class="flex-1 p-6">
+      <section id="getting-started" class="doc-section mb-16">
+        <h2 class="text-2xl font-bold mb-6">Getting Started</h2>
+        <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+          <h3 class="text-xl font-semibold mb-4">Prerequisites</h3>
+          <ul class="list-disc pl-6 space-y-2 mb-6">
+            <li>Node.js v16+</li>
+            <li>Git</li>
+            <li>MetaMask or other Web3 wallet</li>
+          </ul>
+          
+          <h3 class="text-xl font-semibold mb-4">Installation</h3>
+          <pre class="p-4 rounded-lg mb-6 overflow-x-auto">
+            <code>
+# Clone repository
+git clone https://github.com/isaiah-david/chaincred-africa.git
+cd chaincred-africa
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <section id="architecture" class="doc-section mb-16">
+        <h2 class="text-2xl font-bold mb-6">System Architecture</h2>
+        <div class="bg-white rounded-xl shadow-sm p-6">
+          <img src="https://via.placeholder.com/800x400" alt="Architecture Diagram" class="w-full mb-6 rounded-lg">
+          <p class="mb-4">ChainCred consists of three main components:</p>
+          <ol class="list-decimal pl-6 space-y-4">
+            <li>
+              <strong>Identity Layer</strong>: Handles DID creation and management
+              <ul class="list-disc pl-6 mt-2 space-y-1">
+                <li>ERC-725 for identity contracts</li>
+                <li>ENS integration</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Credential Layer</strong>: Issues and verifies NFT-based credentials
+              <ul class="list-disc pl-6 mt-2 space-y-1">
+                <li>ERC-721 tokens with metadata</li>
+                <li>IPFS storage for credential data</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Reputation Layer</strong>: Manages community endorsements
+              <ul class="list-disc pl-6 mt-2 space-y-1">
+                <li>Weighted graph of trust relationships</li>
+                <li>On-chain verification</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Additional sections would continue here -->
+    </main>
+  </div>
+
+    <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-8 md:mb-0">
+          <div class="flex items-center mb-4">
+            <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full mr-3">
+            <span class="text-xl font-bold">ChainCred Africa</span>
+          </div>
+          <p class="text-gray-400 max-w-xs">
+            Building decentralized identity infrastructure for Africa's Web3 future.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Product</h4>
+            <ul class="space-y-2">
+              <li><a href="features.html" class="text-gray-400 hover:text-white transition">Features</a></li>
+              <li><a href="documentation.html" class="text-gray-400 hover:text-white transition">Documentation</a></li>
+              <li><a href="roadmap.html" class="text-gray-400 hover:text-white transition">Roadmap</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+              <li><a href="team.html" class="text-gray-400 hover:text-white transition">Team</a></li>
+              <li><a href="career.html" class="text-gray-400 hover:text-white transition">Careers</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Connect</h4>
+           <ul class="space-y-2">
+  <li><a href="https://x.com/pelvinnero" class="text-gray-400 hover:text-white transition">Twitter</a></li>
+  <li><a href="https://github.com/isaiah-david" class="text-gray-400 hover:text-white transition">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/in/pelvinnero/" class="text-gray-400 hover:text-white transition">LinkedIn</a></li>
+  <li><a href="https://wa.me/2349044938598" class="text-gray-400 hover:text-white transition">WhatsApp</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 ChainCred Africa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

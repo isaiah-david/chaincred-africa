@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team - ChainCred Africa</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); }
+    .team-card:hover .team-social { opacity: 1; transform: translateY(0); }
+    .team-social { 
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="gradient-bg text-white shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full">
+          <span class="text-xl font-bold">ChainCred Africa</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="hover:text-blue-200">Home</a>
+          <a href="about.html" class="font-semibold text-blue-200">About</a>
+          <a href="team.html" class="hover:text-blue-200">Team</a>
+          <a href="features.html" class="hover:text-blue-200">Solutions</a>
+          <a href="contact.html" class="hover:text-blue-200">Contact</a>
+        </div>
+        <button class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Team Header -->
+  <section class="gradient-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Meet Our Team</h1>
+      <p class="text-xl max-w-2xl mx-auto">
+        Passionate builders bridging Web3 and African communities
+      </p>
+    </div>
+  </section>
+
+  <!-- Core Team -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Leadership</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Combining blockchain expertise with deep African market knowledge
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Team Member 1 -->
+        <div class="bg-gray-50 rounded-xl p-6 text-center relative overflow-hidden">
+          <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
+            <img src="https://via.placeholder.com/200" alt="Team member" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold mb-1">David Isaiah</h3>
+          <p class="text-blue-600 font-medium mb-4">Founder & Tech Lead</p>
+          <p class="text-gray-600 mb-6">
+            Ethereum developer with 5+ years building decentralized identity systems
+          </p>
+          <div class="team-social flex justify-center space-x-4">
+            <a href="#" class="text-gray-500 hover:text-blue-600">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-600">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-600">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="bg-gray-50 rounded-xl p-6 text-center relative overflow-hidden">
+          <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
+            <img src="https://via.placeholder.com/200" alt="Team member" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold mb-1">Amina Sow</h3>
+          <p class="text-blue-600 font-medium mb-4">Community Lead</p>
+          <p class="text-gray-600 mb-6">
+            Grassroots organizer connecting tech with African cooperatives
+          </p>
+          <div class="team-social flex justify-center space-x-4">
+            <a href="#" class="text-gray-500 hover:text-blue-600">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-600">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="bg-gray-50 rounded-xl p-6 text-center relative overflow-hidden">
+          <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
+            <img src="https://via.placeholder.com/200" alt="Team member" class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold mb-1">Kwame Mensah</h3>
+          <p class="text-blue-600 font-medium mb-4">Mobile Developer</p>
+          <p class="text-gray-600 mb-6">
+            Flutter expert focused on low-bandwidth optimization
+          </p>
+          <div class="team-social flex justify-center space-x-4">
+            <a href="#" class="text-gray-500 hover:text-blue-600">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-blue-600">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advisors -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Advisors</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Seasoned experts guiding our mission
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Advisor 1 -->
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+            <img src="https://via.placeholder.com/150" alt="Advisor" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-bold mb-1">Dr. Ngozi Eze</h3>
+          <p class="text-sm text-blue-600 mb-2">Blockchain Governance</p>
+          <p class="text-xs text-gray-500">
+            Former Central Bank of Nigeria advisor
+          </p>
+        </div>
+        
+        <!-- Advisor 2 -->
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+            <img src="https://via.placeholder.com/150" alt="Advisor" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-bold mb-1">Pierre Dupont</h3>
+          <p class="text-sm text-blue-600 mb-2">DID Standards</p>
+          <p class="text-xs text-gray-500">
+            W3C Identity Working Group
+          </p>
+        </div>
+        
+        <!-- Advisor 3 -->
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+            <img src="https://via.placeholder.com/150" alt="Advisor" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-bold mb-1">Fatima Diallo</h3>
+          <p class="text-sm text-blue-600 mb-2">African Fintech</p>
+          <p class="text-xs text-gray-500">
+            Founder, Digital Sahara
+          </p>
+        </div>
+        
+        <!-- Advisor 4 -->
+        <div class="bg-white rounded-xl p-6 text-center shadow-sm">
+          <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+            <img src="https://via.placeholder.com/150" alt="Advisor" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-bold mb-1">Thomas Sankara</h3>
+          <p class="text-sm text-blue-600 mb-2">Community DAOs</p>
+          <p class="text-xs text-gray-500">
+            Coordinator, AfriDAO Network
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Team CTA -->
+  <section class="gradient-bg text-white py-16">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">Want to Join Us?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        We're always looking for passionate contributors to help build Africa's identity future.
+      </p>
+      <a href="contact.html" class="inline-block bg-white text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+        Contact Our Team
+      </a>
+    </div>
+  </section>
+
+   <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-8 md:mb-0">
+          <div class="flex items-center mb-4">
+            <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full mr-3">
+            <span class="text-xl font-bold">ChainCred Africa</span>
+          </div>
+          <p class="text-gray-400 max-w-xs">
+            Building decentralized identity infrastructure for Africa's Web3 future.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Product</h4>
+            <ul class="space-y-2">
+              <li><a href="features.html" class="text-gray-400 hover:text-white transition">Features</a></li>
+              <li><a href="documentation.html" class="text-gray-400 hover:text-white transition">Documentation</a></li>
+              <li><a href="roadmap.html" class="text-gray-400 hover:text-white transition">Roadmap</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+              <li><a href="team.html" class="text-gray-400 hover:text-white transition">Team</a></li>
+              <li><a href="career.html" class="text-gray-400 hover:text-white transition">Careers</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Connect</h4>
+           <ul class="space-y-2">
+  <li><a href="https://x.com/pelvinnero" class="text-gray-400 hover:text-white transition">Twitter</a></li>
+  <li><a href="https://github.com/isaiah-david" class="text-gray-400 hover:text-white transition">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/in/pelvinnero/" class="text-gray-400 hover:text-white transition">LinkedIn</a></li>
+  <li><a href="https://wa.me/2349044938598" class="text-gray-400 hover:text-white transition">WhatsApp</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 ChainCred Africa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

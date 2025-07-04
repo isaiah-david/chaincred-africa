@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChainCred Africa - Features</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); }
+    .feature-card { transition: all 0.3s ease; }
+    .feature-card:hover { transform: translateY(-5px); }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full">
+          <span class="text-xl font-bold">ChainCred Africa</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="hover:text-blue-200">Home</a>
+          <a href="about.html" class="font-semibold text-blue-200">About</a>
+          <a href="team.html" class="hover:text-blue-200">Team</a>
+          <a href="features.html" class="hover:text-blue-200">Solutions</a>
+          <a href="contact.html" class="hover:text-blue-200">Contact</a>
+        </div>
+        <button class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Core Features</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Comprehensive solutions designed for Africa's decentralized identity needs
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <!-- Identity Features -->
+        <div class="feature-card bg-gray-50 rounded-xl p-8 border border-gray-200">
+          <div class="flex items-center mb-6">
+            <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mr-6">
+              <i class="fas fa-user-shield text-blue-600 text-2xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800">Identity Management</h2>
+          </div>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+              <div>
+                <h3 class="font-semibold">Wallet-Based Profiles</h3>
+                <p class="text-gray-600 text-sm">Create and control your identity using Ethereum wallets</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+              <div>
+                <h3 class="font-semibold">DID Standards</h3>
+                <p class="text-gray-600 text-sm">Decentralized Identifiers compatible with W3C standards</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+              <div>
+                <h3 class="font-semibold">Recovery Options</h3>
+                <p class="text-gray-600 text-sm">Social recovery and backup mechanisms</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Credential Features -->
+        <div class="feature-card bg-gray-50 rounded-xl p-8 border border-gray-200">
+          <div class="flex items-center mb-6">
+            <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mr-6">
+              <i class="fas fa-certificate text-blue-600 text-2xl"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-800">Verifiable Credentials</h2>
+          </div>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+              <div>
+                <h3 class="font-semibold">NFT-Based Certificates</h3>
+                <p class="text-gray-600 text-sm">Tamper-proof credentials as ERC-721 tokens</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+              <div>
+                <h3 class="font-semibold">Custom Schemas</h3>
+                <p class="text-gray-600 text-sm">Define credential types for different use cases</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+              <div>
+                <h3 class="font-semibold">Off-Chain Verification</h3>
+                <p class="text-gray-600 text-sm">Verify credentials without gas costs</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Additional Feature Groups -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="feature-card bg-gray-50 rounded-xl p-6 border border-gray-200">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-users text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Community Reputation</h3>
+          <p class="text-gray-600">Earn endorsements and build verifiable trust within communities</p>
+        </div>
+        
+        <div class="feature-card bg-gray-50 rounded-xl p-6 border border-gray-200">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-mobile-alt text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Mobile Optimized</h3>
+          <p class="text-gray-600">Lightweight interface for low-bandwidth connections</p>
+        </div>
+        
+        <div class="feature-card bg-gray-50 rounded-xl p-6 border border-gray-200">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-gas-pump text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Gasless Transactions</h3>
+          <p class="text-gray-600">Meta-transactions for users without ETH</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-8 md:mb-0">
+          <div class="flex items-center mb-4">
+            <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full mr-3">
+            <span class="text-xl font-bold">ChainCred Africa</span>
+          </div>
+          <p class="text-gray-400 max-w-xs">
+            Building decentralized identity infrastructure for Africa's Web3 future.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Product</h4>
+            <ul class="space-y-2">
+              <li><a href="features.html" class="text-gray-400 hover:text-white transition">Features</a></li>
+              <li><a href="documentation.html" class="text-gray-400 hover:text-white transition">Documentation</a></li>
+              <li><a href="roadmap.html" class="text-gray-400 hover:text-white transition">Roadmap</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+              <li><a href="team.html" class="text-gray-400 hover:text-white transition">Team</a></li>
+              <li><a href="career.html" class="text-gray-400 hover:text-white transition">Careers</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Connect</h4>
+           <ul class="space-y-2">
+  <li><a href="https://x.com/pelvinnero" class="text-gray-400 hover:text-white transition">Twitter</a></li>
+  <li><a href="https://github.com/isaiah-david" class="text-gray-400 hover:text-white transition">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/in/pelvinnero/" class="text-gray-400 hover:text-white transition">LinkedIn</a></li>
+  <li><a href="https://wa.me/2349044938598" class="text-gray-400 hover:text-white transition">WhatsApp</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 ChainCred Africa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

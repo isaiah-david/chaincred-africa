@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About ChainCred Africa</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); }
+    .mission-card { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="gradient-bg text-white shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+          <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full">
+          <span class="text-xl font-bold">ChainCred Africa</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="hover:text-blue-200">Home</a>
+          <a href="about.html" class="font-semibold text-blue-200">About</a>
+          <a href="team.html" class="hover:text-blue-200">Team</a>
+          <a href="features.html" class="hover:text-blue-200">Solutions</a>
+          <a href="contact.html" class="hover:text-blue-200">Contact</a>
+        </div>
+        <button class="md:hidden focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-bg text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Our Mission</h1>
+      <p class="text-xl max-w-3xl mx-auto">
+        Building decentralized identity infrastructure to empower African communities in Web3
+      </p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center gap-12 mb-16">
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">Why We Exist</h2>
+          <p class="text-gray-600 mb-6">
+            Africa faces a critical trust infrastructure gap. Over 500 million people lack formal identification, 
+            while talented creators and communities struggle to establish verifiable reputations in the digital economy.
+          </p>
+          <p class="text-gray-600">
+            ChainCred Africa provides the missing link - open-source, blockchain-based tools for identity, credentials, 
+            and reputation that work for Africa's unique needs.
+          </p>
+        </div>
+        <div class="lg:w-1/2">
+          <img src="https://via.placeholder.com/600x400" alt="African digital community" class="rounded-xl shadow-lg w-full">
+        </div>
+      </div>
+
+      <div class="mission-card rounded-xl p-8 md:p-12 mb-16">
+        <div class="max-w-4xl mx-auto text-center">
+          <i class="fas fa-bullseye text-blue-600 text-4xl mb-6"></i>
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">Our 2025 Vision</h3>
+          <p class="text-gray-700 text-lg">
+            To onboard 1 million Africans to Web3 through self-sovereign identity, enabling participation in 
+            decentralized finance, creator economies, and community governance - all while maintaining full control 
+            over their digital selves.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-globe-africa text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Africa-First Approach</h3>
+          <p class="text-gray-600">
+            Designed for mobile-first users, low-bandwidth environments, and local community structures.
+          </p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-lock-open text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Open Infrastructure</h3>
+          <p class="text-gray-600">
+            Fully open-source protocol that anyone can build upon or integrate with existing systems.
+          </p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-hands-helping text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Community-Led</h3>
+          <p class="text-gray-600">
+            Governance by and for African users, with localized credentialing partners.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between">
+        <div class="mb-8 md:mb-0">
+          <div class="flex items-center mb-4">
+            <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full mr-3">
+            <span class="text-xl font-bold">ChainCred Africa</span>
+          </div>
+          <p class="text-gray-400 max-w-xs">
+            Building decentralized identity infrastructure for Africa's Web3 future.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Product</h4>
+            <ul class="space-y-2">
+              <li><a href="features.html" class="text-gray-400 hover:text-white transition">Features</a></li>
+              <li><a href="documentation.html" class="text-gray-400 hover:text-white transition">Documentation</a></li>
+              <li><a href="roadmap.html" class="text-gray-400 hover:text-white transition">Roadmap</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Company</h4>
+            <ul class="space-y-2">
+              <li><a href="about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+              <li><a href="team.html" class="text-gray-400 hover:text-white transition">Team</a></li>
+              <li><a href="career.html" class="text-gray-400 hover:text-white transition">Careers</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Connect</h4>
+           <ul class="space-y-2">
+  <li><a href="https://x.com/pelvinnero" class="text-gray-400 hover:text-white transition">Twitter</a></li>
+  <li><a href="https://github.com/isaiah-david" class="text-gray-400 hover:text-white transition">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/in/pelvinnero/" class="text-gray-400 hover:text-white transition">LinkedIn</a></li>
+  <li><a href="https://wa.me/2349044938598" class="text-gray-400 hover:text-white transition">WhatsApp</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 ChainCred Africa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
