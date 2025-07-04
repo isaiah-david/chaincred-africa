@@ -16,26 +16,42 @@
 </head>
 <body class="bg-gray-50">
   <!-- Navigation -->
-    <nav class="gradient-bg text-white shadow-lg">
-    <div class="container mx-auto px-6 py-4">
-      <div class="flex justify-between items-center">
-        <div class="flex items-center space-x-4">
-          <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full">
-          <span class="text-xl font-bold">ChainCred Africa</span>
-        </div>
-        <div class="hidden md:flex space-x-8">
-          <a href="index.html" class="hover:text-blue-200">Home</a>
-          <a href="about.html" class="font-semibold text-blue-200">About</a>
-          <a href="team.html" class="hover:text-blue-200">Team</a>
-          <a href="features.html" class="hover:text-blue-200">Solutions</a>
-          <a href="contact.html" class="hover:text-blue-200">Contact</a>
-        </div>
-        <button class="md:hidden focus:outline-none">
-          <i class="fas fa-bars text-2xl"></i>
-        </button>
+<!-- Navigation -->
+<nav class="gradient-bg text-white shadow-lg">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="chaincred.jpg" alt="Logo" class="h-10 rounded-full">
+        <span class="text-xl font-bold">ChainCred Africa</span>
       </div>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="hover:text-blue-200">Home</a>
+        <a href="about.html" class="hover:text-blue-200">About</a>
+        <a href="team.html" class="hover:text-blue-200">Team</a>
+        <a href="features.html" class="hover:text-blue-200">Solutions</a>
+        <a href="contact.html" class="hover:text-blue-200">Contact</a>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="menuToggle" class="md:hidden focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
     </div>
-  </nav>
+
+    <!-- Mobile Nav -->
+    <div id="mobileMenu" class="md:hidden mt-4 space-y-4 hidden">
+      <a href="index.html" class="block hover:text-blue-200">Home</a>
+      <a href="about.html" class="block hover:text-blue-200">About</a>
+      <a href="team.html" class="block hover:text-blue-200">Team</a>
+      <a href="features.html" class="block hover:text-blue-200">Solutions</a>
+      <a href="contact.html" class="block hover:text-blue-200">Contact</a>
+    </div>
+  </div>
+</nav>
+
 
   <!-- Main Content -->
   <section class="py-16 bg-white">
@@ -197,3 +213,12 @@
   </footer>
 </body>
 </html>
+<script>
+  // Toggle mobile menu
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
